@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 public class CircularReference extends Exception {
     public String getMessage() {

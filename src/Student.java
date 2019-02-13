@@ -1,6 +1,5 @@
 import java.io.Serializable;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Map;
 
 public class Student implements Serializable {
@@ -11,15 +10,15 @@ public class Student implements Serializable {
     private double averageRating;
     private Boolean isMarried;
 
-    Map<String, List<Integer>> map;
-    List<Integer> l;
+    private  Map<String, List<Integer>> map;
+    private List<Integer> list;
 
-    public List<Integer> getL() {
-        return l;
+    public List<Integer> getList() {
+        return list;
     }
 
-    public void setL(List<Integer> l) {
-        this.l = l;
+    public void setList(List<Integer> list) {
+        this.list = list;
     }
 
     public Map<String, List<Integer>> getMap() {

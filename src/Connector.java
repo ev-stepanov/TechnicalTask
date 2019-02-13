@@ -1,5 +1,5 @@
-import Exceptions.CircularReference;
-import Interface.SuperEncoder;
+import exceptions.CircularReference;
+import interfaces.SuperEncoder;
 
 import java.io.*;
 import java.lang.reflect.*;

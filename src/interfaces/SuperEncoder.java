@@ -1,6 +1,6 @@
-package Interface;
+package interfaces;
 
-import Exceptions.CircularReference;
+import exceptions.CircularReference;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

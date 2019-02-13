@@ -1,30 +1,33 @@
-import Exceptions.CircularReference;
-import com.sun.javafx.css.Combinator;
+import exceptions.CircularReference;
 
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class Program {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchFieldException, IOException {
+    public static void main(String[] args){
         new Program().run();
 
     }
-    public void run() {
+    private void run() {
 
         try {
             Student student = new Student();
+
+            student.setFirstName("Ivan");
+            student.setLastName("Ivanov");
+            student.setAge(31);
+            student.setCourse(2);
+            student.setAverageRating(4.3);
 
             Map<String, List<Integer>> map = new HashMap<>();
             List<Integer> list = new LinkedList<>();
             list.add(4);
             list.add(2);
-            map.put("hahaha", list);
+            map.put("one", list);
 
             List<Integer> l = new ArrayList<>();
             l.add(33);
             l.add(34);
-            map.put("ahahaha", l);
+            map.put("two", l);
 
             student.setMap(map);
 
